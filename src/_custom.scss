@@ -8,5 +8,13 @@ $secondary:$gris;
 $headings-font-family:'Poppins', sans-serif;
 $headings-font-weight:700;
 $font-family-sans-serif: 'Poppins', sans-serif;
+$h1-font-size: 4.5rem;
+//Para calibrar a tamaño pixeles los rem:
+$font-size-root:62.5%;
+
+
+//Tamaño Spacer de Variables:
+$spacer: 5rem;
+
 //Importar Bootstrap
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
