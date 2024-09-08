@@ -1,5 +1,6 @@
 @use '../custom' as *;
 @use '../utils/mixins';
+@use '../components/botones';
 
 .site-header{
   @include mixins.bgImage('../../public/assets/img/header.jpg', $secondary);
