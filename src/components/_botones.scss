@@ -9,6 +9,7 @@
   text-align: center;
   display: block;
   margin-top: 2rem;
+  border-radius: 0rem;
 
   @include media-breakpoint-up(md){
     display: inline-block;

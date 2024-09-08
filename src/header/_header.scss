@@ -7,19 +7,23 @@
 
   .logo{
       max-width: 20rem;
+      //Logo a la izquierda en pantalla grande:
       margin: 0 auto;
       @include media-breakpoint-up(md){
+        //Logo mediano al centro:
         margin: 0;
       }
   }.contenido{
-    padding-top: 10rem;
-    padding-bottom: 10rem;
+    //Tamaño de padding en pantalla mediana:
+    padding-top: 8rem;
+    padding-bottom: 8rem;
     @include media-breakpoint-up(md){
       max-width: 50%;
     }
+    //Tamaño de padding en pantalla grande:
     @include media-breakpoint-up(lg){
-      padding-top: 15rem;
-      padding-bottom: 15rem;
+      padding-top: 6rem;
+      padding-bottom: 6rem;
       max-width: 40%;
     }
     h1{
