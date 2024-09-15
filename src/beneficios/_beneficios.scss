@@ -1,0 +1,19 @@
+@use '../custom' as *;
+@use '../utils/mixins' as m;
+
+.beneficios{
+    h2{
+      @include m.headingBorder($secondary, $white);
+    }.imagen{
+      //Para que la imagen no se mueva cuando sea pequeña: @include media-breakpoint-up(md)
+      @include media-breakpoint-up(md){
+        //Para que gire lentramente la imagen:  @include transition(transform 300ms ease);
+        @include transition(transform 300ms ease);
+        &:hover{
+          //Para que la imagen rote y no crezca a una escala muy grande: transform: rotate(8deg) scale(1.1);
+          transform: rotate(8deg) scale(1.1);
+        }
+      }
+    }
+}
+
