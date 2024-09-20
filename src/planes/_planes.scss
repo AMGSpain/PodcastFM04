@@ -1,0 +1,11 @@
+@use '../custom' as *;
+@use '../utils/mixins' as m;
+
+.planes{
+  h2{
+    @include m.headingBorder($white, $primary);
+  }
+}
+.plan{
+  padding: 16rem 4rem 4rem 4rem;
+}
