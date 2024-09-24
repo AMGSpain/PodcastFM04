@@ -1,11 +1,38 @@
 @use '../custom' as *;
 @use '../utils/mixins' as m;
+@use '../components/botones';
+
 
 .planes{
   h2{
     @include m.headingBorder($white, $primary);
   }
+  ul{
+    list-style-type: none ;
+  }
+  .precio{
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
 }
 .plan{
   padding: 16rem 4rem 4rem 4rem;
+
+  &.inicio{
+    @include m.bgIcono('../../public/assets/img/icono_inicio.svg');
+  }
+
+  &.negocio{
+    @include m.bgIcono('../../public/assets/img/icono_negocio.svg');
+    @include media-breakpoint-up(md){
+      margin-top: -5rem;
+      margin-bottom: -5rem;
+      border-radius: 2rem;
+    }
+  }
+
+  &.pro{
+    @include m.bgIcono('../../public/assets/img/icono_pro.svg');
+  }
 }

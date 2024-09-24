@@ -4,14 +4,29 @@
   // BG, Border, Color Texto, HOVER: BG, Border, texto
   @include button-variant($primary, transparent,  $secondary, darken($primary,10%), transparent, darken($secondary,10%));
   @include button-size(1rem, 5rem, 2rem, 0);
+
   font-weight: 700;
   text-decoration: none;
   text-align: center;
   display: block;
   margin-top: 2rem;
-  border-radius: 0rem;
+  border-radius: 0.5rem;
 
   @include media-breakpoint-up(md){
     display: inline-block;
   }
 }
+
+
+.boton-plan{
+  @extend .btn-header;
+  border: 1px solid white;
+  //border-radius: 0.5rem;
+  background-color: $primary;
+  color: black;
+
+  @include media-breakpoint-up(md){
+    display: block;
+  }
+}
+
