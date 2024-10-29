@@ -15,9 +15,13 @@
     font-weight: bold;
     text-transform: uppercase;
   }
+
+
 }
 .plan{
   padding: 16rem 4rem 4rem 4rem;
+  //Border para crear separaciones entre planes
+  border-bottom: 1px solid #e1e1e1;
 
   &.inicio{
     @include m.bgIcono('../../public/assets/img/icono_inicio.svg');
@@ -29,10 +33,24 @@
       margin-top: -5rem;
       margin-bottom: -5rem;
       border-radius: 2rem;
+      //Para que no se pisen al pulsar por encima utilizar Z-INDEX: 100
+      z-index: 100;
+      //Para que se regulen los textos de los 3 menus de la cabecera
+      padding-top: calc(16rem + 5rem);
+      //Para alinear la imagen del AVIÓN más abajo
+      background-position-y: calc(2rem + 5rem);
     }
   }
 
   &.pro{
     @include m.bgIcono('../../public/assets/img/icono_pro.svg');
+  }
+
+  //Para cear el efecto que agranda el los PLANES o MENUS:
+  @include media-breakpoint-up(md){
+    @include transition(transform 300ms ease);
+    &:hover{
+      transform: scale(1.1);
+    }
   }
 }
