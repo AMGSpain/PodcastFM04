@@ -13,16 +13,37 @@
   padding: 2rem 2rem 2rem 6rem;
   position: relative;
 
+  /*
   &::before {
-    content: none;
+
     width: 5rem;
     height:  5rem;
-    background-image: url('/public/assets/img/comilla.svg');
+    //background-image: url('/assets/img/comilla.svg');
     background-size: 4rem;
     background-repeat: none;
     background-position: center center;
     position: absolute;
-    left: .5rem;
+    left: -0.5rem;
   }
-
+  */
 }
+/*
+  .ComillasClass{
+    //content: url('/assets/img/comilla.svg');
+
+
+    //background-size: ;
+
+    /*
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80px;
+    left: 1rem;
+}
+    */
+
+
+
+
+
+
